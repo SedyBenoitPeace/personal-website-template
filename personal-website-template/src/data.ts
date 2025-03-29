@@ -1,8 +1,5 @@
 // src/data.ts
 import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
   FaReact,
   FaNodeJs,
   FaAws,
@@ -13,7 +10,6 @@ import {
 import {
   SiTypescript,
   SiDotnet,
-  SiCsharp,
   SiJavascript,
   SiAngular,
   SiCss3,
@@ -153,7 +149,7 @@ export const workExperience: ExperienceItem[] = [
       "Built scalable microservices using Node.js and Kafka",
       "Mentored junior developers and conducted technical interviews",
       "Implemented CI/CD pipelines reducing deployment time by 40%",
-      "Optimized database queries resulting in 30% performance improvement"
+      "Optimized database queries resulting in 30% performance improvement",
     ],
   },
   {
@@ -217,7 +213,8 @@ export const projects: Project[] = [
   },
   {
     title: "Task Management System",
-    description: "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
+    description:
+      "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
     technologies: [".NET", "C#", "Azure", "SQL Server"],
     githubUrl: "https://github.com/johndeveloper/task-management",
   },
@@ -242,8 +239,7 @@ export const education = [
     degree: "Bachelor's Degree",
     field: "Computer Science",
     dates: "Sep 2009 - Jun 2013",
-    notes:
-      "Thesis: Web-based GIS Application for Community Issue Reporting",
+    notes: "Thesis: Web-based GIS Application for Community Issue Reporting",
   },
 ];
 

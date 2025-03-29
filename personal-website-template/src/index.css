@@ -1,0 +1,42 @@
+/* src/index.css */
+
+/* Import Tailwind's base, components, and utilities */
+@import "tailwindcss";
+
+/* Define your custom theme colors using CSS variables */
+/* These will be accessible throughout your CSS and potentially via Tailwind utilities */
+:root {
+  --color-primary-dark: #1a1a1a;
+  --color-secondary-dark: #2a2a2a;
+  --color-accent-orange: #ff8c00; /* DarkOrange */
+  --color-accent-orange-light: #ffa500; /* Lighter orange */
+  --color-text-light: #e0e0e0;
+  --color-text-muted: #a0a0a0;
+
+  /* Optional: Map these to Tailwind color names IF needed,
+     but often you can use the variables directly or let Tailwind's JIT handle it */
+}
+
+/* Apply base styles */
+body {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  font-family: sans-serif; /* Or your preferred font stack */
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Apply accent color - you might use CSS variables or Tailwind classes */
+  color: var(--color-accent-orange);
+  /* Alternatively, if using Tailwind classes extensively,
+     you might define 'accent-orange' in a minimal tailwind.config.js (see Phase 2)
+     and use className="text-accent-orange" in your components. */
+  font-weight: 600; /* Corresponds roughly to font-semibold */
+}
+
+/* You can add other base styles or custom utility classes here */
